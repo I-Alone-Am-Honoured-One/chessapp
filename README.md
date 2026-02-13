@@ -1,28 +1,23 @@
-# Chess Sprint Android (Android Studio Project)
+# Chess Sprint (Android)
 
-A complete Android Studio project for a beginner-friendly chess app that includes:
+A user-friendly Android app that turns your 7-day chess improvement sprint into a trackable routine.
 
-- **Play tab:** an interactive chess practice board (piece movement, captures, turn handling, reset, quick bot move).
-- **Routine tab:** your full 7-day chess improvement routine with checkable daily progress.
-
-## Open in Android Studio
-1. Open Android Studio.
-2. Choose **Open** and select this folder.
-3. Let Gradle sync complete.
-4. Run on an emulator or Android phone.
+## What this app includes
+- A clean single-screen dashboard for your **12:00 AM wake-up** routine.
+- The full **4-hour daily structure** split into four blocks.
+- The complete **7-day focus plan** (Day 1 to Day 7).
+- Built-in completion checkboxes so you can mark each day done.
+- Clear “non-negotiable rules” to prevent tilt and rating drops.
 
 ## Tech
 - Kotlin
 - Jetpack Compose
 - Material 3
 
-## Key files
-- `app/src/main/java/com/example/chesssprint/MainActivity.kt`
-- `app/src/main/AndroidManifest.xml`
-- `app/build.gradle.kts`
-- `gradle/wrapper/gradle-wrapper.properties`
+## Project structure
+- `app/src/main/java/com/example/chesssprint/MainActivity.kt` – Main UI and sprint content.
+- `app/src/main/AndroidManifest.xml` – Android app entry.
+- `app/build.gradle.kts` – Android module config.
 
 ## Notes
-- This repo keeps only text-based wrapper files due binary-file restrictions in this environment.
-- If `./gradlew` complains about a missing wrapper JAR, regenerate it in Android Studio or terminal with `gradle wrapper`.
-- If sync fails on a restricted network, connect to a network that allows Gradle/Maven downloads.
+This environment blocks external Android/Gradle artifact downloads, so dependency resolution and full Android build execution may fail here. The code is ready to open in Android Studio where standard Android SDK + dependency access is available.
